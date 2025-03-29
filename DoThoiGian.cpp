@@ -1,5 +1,5 @@
-#include <chrono>
 #include <iostream>
+#include <chrono>
 #include <random>
 #include <vector>
 #include <algorithm>
@@ -9,7 +9,7 @@ using namespace std;
 // Print Array.
 void printList(int* arr, int n)
 {
-    // Arr l‡ m?ng s? d?ng con tr?, n l‡ s? l??ng ph?n t?
+    // Arr l√† m?ng s? d?ng con tr?, n l√† s? l??ng ph?n t?
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
     }
@@ -26,13 +26,13 @@ void makeCopyArr(int*& arr1, int*& arr2, int n)
 }
 
 // Function destroy pointer array.
-// D˘ng ?? delete m?ng con tr?.
+// D√πng ?? delete m?ng con tr?.
 void destroy(int*& arr) {
     if (arr == NULL)   return;
     delete[] arr;
 }
 
-// T?o ra m?t m?ng v?i size v‡ kho?ng t? min ??n max.
+// T?o ra m?t m?ng v?i size v√† kho?ng t? min ??n max.
 // Function to generate a random array.
 int* generateRandomArray(int size, int min, int max) {
     if (size == 0) return NULL;
@@ -77,16 +77,16 @@ int* generateNearlySortedArray(int size, int min, int max) {
     int sizeSorted = size * 8 / 10;
     int sizeUnSorted = size - sizeSorted;
 
-    srand(time(0));  // Seed ?? sinh s? ng?u nhiÍn m?i l?n ch?y
-    int randomNumber = rand() % (sizeUnSorted + 1);  // S? ng?u nhiÍn t? 0 ??n v? trÌ c?n ?c sort
+    srand(time(0));  // Seed ?? sinh s? ng?u nhi√™n m?i l?n ch?y
+    int randomNumber = rand() % (sizeUnSorted + 1);  // S? ng?u nhi√™n t? 0 ??n v? tr√≠ c?n ?c sort
 
     sort(arr + randomNumber, arr + randomNumber + sizeSorted);
 
     return arr;
 }
 
-// H‡m ??m th?i gian ch?y.
-// s? d?ng thÏ b?n call: double time = measureExecutionTime(<yourSortFunction>, <yourArrTmp>, n);
+// H√†m ??m th?i gian ch?y.
+// s? d?ng th√¨ b?n call: double time = measureExecutionTime(<yourSortFunction>, <yourArrTmp>, n);
 template <typename Func, typename... Args>
 double measureExecutionTime(Func func, Args &&...args) {
     auto start = std::chrono::high_resolution_clock::now();
