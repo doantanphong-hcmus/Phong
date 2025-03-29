@@ -1,0 +1,17 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Selectionsort.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Main.cpp
+C:\Users\Admin\source\repos\Phongd\Selectionsort\measureExecutionTime.h(19,5): error C2197: 'Func': too many arguments for call
+C:\Users\Admin\source\repos\Phongd\Selectionsort\measureExecutionTime.h(19,5): error C2197:         with
+C:\Users\Admin\source\repos\Phongd\Selectionsort\measureExecutionTime.h(19,5): error C2197:         [
+C:\Users\Admin\source\repos\Phongd\Selectionsort\measureExecutionTime.h(19,5): error C2197:             Func=void (__cdecl *)(int [],int)
+C:\Users\Admin\source\repos\Phongd\Selectionsort\measureExecutionTime.h(19,5): error C2197:         ]
+  (compiling source file 'Main.cpp')
+      C:\Users\Admin\source\repos\Phongd\Selectionsort\measureExecutionTime.h(19,5):
+      the template instantiation context (the oldest one first) is
+          C:\Users\Admin\source\repos\Phongd\Selectionsort\Main.cpp(15,27):
+          see reference to function template instantiation 'double measureExecutionTime<void(__cdecl *)(int [],int),int*&,int,int>(Func,int *&,int &&,int &&)' being compiled
+          with
+          [
+              Func=void (__cdecl *)(int [],int)
+          ]
+  
